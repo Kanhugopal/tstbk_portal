@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter OTP - Skill Academy Placement Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/skill-logo.png" alt="Skill Academy Logo">
+        </div>
+        <div class="auth-buttons">
+            <button class="btn login-btn" onclick="window.location.href='login.html'">Login</button>
+            <button class="btn signup-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+        </div>
+    </header>
+
+    <main class="otp-content">
+        <div class="otp-container">
+            <h2>Enter OTP</h2>
+            <p class="otp-description">We have sent a One-Time Password to your registered email. Please enter it below to continue.</p>
+            <div class="otp-inputs">
+                <input type="text" maxlength="1" class="otp-box" id="otp1" oninput="moveToNextBox(this, 'otp2')">
+                <input type="text" maxlength="1" class="otp-box" id="otp2" oninput="moveToNextBox(this, 'otp3')">
+                <input type="text" maxlength="1" class="otp-box" id="otp3" oninput="moveToNextBox(this, 'otp4')">
+                <input type="text" maxlength="1" class="otp-box" id="otp4" oninput="moveToNextBox(this, 'otp5')">
+                <input type="text" maxlength="1" class="otp-box" id="otp5" oninput="moveToNextBox(this, 'otp6')">
+                <input type="text" maxlength="1" class="otp-box" id="otp6" oninput="moveToNextBox(this, '')">
+            </div>
+            <button class="submit-btn" onclick="submitOTP()">Continue</button>
+        </div>
+    </main>
+
+    <script>
+        function moveToNextBox(currentBox, nextBoxId) {
+            if (currentBox.value.length === 1 && nextBoxId) {
+                document.getElementById(nextBoxId).focus();
+            }
+        }
+
+        function submitOTP() {
+            // Gather the values from each OTP input box
+            const otp = [
+                document.getElementById("otp1").value,
+                document.getElementById("otp2").value,
+                document.getElementById("otp3").value,
+                document.getElementById("otp4").value,
+                document.getElementById("otp5").value,
+                document.getElementById("otp6").value
+            ].join(''); 
+
+            // Check if OTP contains exactly 6 digits
+            if (/^\d{6}$/.test(otp)) { 
+                window.location.href = 'home.html';
+            } else {
+                alert("Please enter a valid 6-digit OTP.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Skill Academy Placement Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <a href="https://testbook.com/skill-academy" target="_blank">
+                <img src="images/skill-logo.png" alt="Skill Academy Logo" style="cursor: pointer;">
+            </a>
+        </div>
+        <div class="profile-section">
+            <img src="images/profile-icon.png" alt="Profile Logo" class="profile-logo">
+        </div>
+    </header>
+
+    <!-- Carousel Section -->
+    <main class="main-content-carousel">
+        <section class="carousel-container">
+            <div class="carousel-slide">
+                <img src="images/cover.jpg" alt="Carousel Image 1">
+                <img src="images/cover.jpg" alt="Carousel Image 2">
+                <img src="images/cover.jpg" alt="Carousel Image 3">
+            </div>
+        
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button class="active" data-slide="1"></button>
+                <button data-slide="2"></button>
+                <button data-slide="3"></button>
+            </div>
+        
+            <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <!-- Wall of Fame Section -->
+    <section class="wall-of-fame">
+        <div class="wall-card">
+            <h2>Our Wall of Fame</h2>
+            <div class="students-container">
+                <!-- Example student entries -->
+                <div class="student-card">
+                    <img src="images/profile-icon.png" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p>Selected at: <strong>ABC Corp</strong></p>
+                    <p>Role: <strong>Software Engineer</strong></p>
+                </div>
+                
+                <div class="student-card">
+                    <img src="images/profile-icon.png" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>Selected at: <strong>XYZ Tech</strong></p>
+                    <p>Role: <strong>Data Analyst</strong></p>
+                </div>
+                <div class="student-card">
+                    <img src="images/profile-icon.png" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p>Selected at: <strong>ABC Corp</strong></p>
+                    <p>Role: <strong>Software Engineer</strong></p>
+                </div>
+                <div class="student-card">
+                    <img src="images/profile-icon.png" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>Selected at: <strong>XYZ Tech</strong></p>
+                    <p>Role: <strong>Data Analyst</strong></p>
+                </div>
+                <div class="student-card">
+                    <img src="images/profile-icon.png" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p>Selected at: <strong>ABC Corp</strong></p>
+                    <p>Role: <strong>Software Engineer</strong></p>
+                </div>
+                <div class="student-card">
+                    <img src="images/profile-icon.png" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>Selected at: <strong>XYZ Tech</strong></p>
+                    <p>Role: <strong>Data Analyst</strong></p>
+                </div>
+                <div class="student-card">
+                    <img src="images/profile-icon.png" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p>Selected at: <strong>ABC Corp</strong></p>
+                    <p>Role: <strong>Software Engineer</strong></p>
+                </div>
+                <div class="student-card">
+                    <img src="images/profile-icon.png" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>Selected at: <strong>XYZ Tech</strong></p>
+                    <p>Role: <strong>Data Analyst</strong></p>
+                </div>
+                <div class="student-card">
+                    <img src="images/profile-icon.png" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p>Selected at: <strong>ABC Corp</strong></p>
+                    <p>Role: <strong>Software Engineer</strong></p>
+                </div>
+                <div class="student-card">
+                    <img src="images/profile-icon.png" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>Selected at: <strong>XYZ Tech</strong></p>
+                    <p>Role: <strong>Data Analyst</strong></p>
+                </div>
+                <!-- Repeat for more students -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Templates and Video Section -->
+    <section class="resources-section">
+        <div class="resource-card resume">
+            <h2>Resume Templates</h2>
+            <p>Choose from a variety of resume templates to create a professional resume:</p>
+            <ul class="template-list">
+                <li><a href="#">Professional Resume</a></li>
+                <li><a href="#">Creative Resume</a></li>
+                <li><a href="#">Modern Resume</a></li>
+            </ul>
+        </div>
+
+        <div class="resource-card video">
+            <h2>Placement Success Story</h2>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    <!-- Main Content Section -->
+    
+      
+
+        <!-- Job Listings Section -->
+<section class="job-listings">
+    <h2>Available Job Listings</h2>
+
+    <div class="job-card">
+        <div class="job-details">
+            <div>
+                <h3>Frontend Developer</h3>
+                <p>Company: ABC Corp</p>
+                <p>Location: Remote</p>
+                <p>Experience: 1-3 years</p>
+            </div>
+            <button class="apply-btn">Apply</button>
+        </div>
+    </div>
+
+    <div class="job-card">
+        <div class="job-details">
+            <div>
+                <h3>Backend Developer</h3>
+                <p>Company: XYZ Solutions</p>
+                <p>Location: New York, NY</p>
+                <p>Experience: 2-5 years</p>
+            </div>
+            <button class="apply-btn">Apply</button>
+        </div>
+    </div>
+
+    <div class="job-card">
+        <div class="job-details">
+            <div>
+                <h3>Data Analyst</h3>
+                <p>Company: DataPros Inc.</p>
+                <p>Location: San Francisco, CA</p>
+                <p>Experience: 1-2 years</p>
+            </div>
+            <button class="apply-btn">Apply</button>
+        </div>
+    </div>
+
+    <div class="job-card">
+        <div class="job-details">
+            <div>
+                <h3>Data Analyst</h3>
+                <p>Company: DataPros Inc.</p>
+                <p>Location: San Francisco, CA</p>
+                <p>Experience: 1-2 years</p>
+            </div>
+            <button class="apply-btn">Apply</button>
+        </div>
+    </div>
+</section>
+
+
+    <script>
+        // Basic JavaScript for Carousel Navigation
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".carousel-slide img");
+        const indicators = document.querySelectorAll(".carousel-indicators button");
+
+        function moveSlide(step) {
+            currentSlide = (currentSlide + step + slides.length) % slides.length;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            document.querySelector(".carousel-slide").style.transform = `translateX(-${currentSlide * 100}%)`;
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle("active", index === currentSlide);
+            });
+        }
+
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener("click", () => {
+                currentSlide = index;
+                updateCarousel();
+            });
+        });
+
+        // Initialize the first slide
+        updateCarousel();
+    </script>
+
+
+    
+
+</body>
+
+<footer class="footer">
+    <p>&copy; 2024 Skill Academy. All rights reserved.</p>
+</footer>
+
+<!-- Footer Section -->
+</html>
